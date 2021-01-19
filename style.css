@@ -349,7 +349,7 @@ section .title::after{
     text-align: justify;
 }
 
-.skills .skills-content .left a{
+.skills .skills-content .left button{
     display: inline-block;
     background: rgb(72, 191, 255);
     color: #fff;
@@ -362,7 +362,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.skills .skills-content .left a:hover{
+.skills .skills-content .left button:hover{
     color: rgb(72, 191, 255);
     background: none;
 }
@@ -417,6 +417,10 @@ section .title::after{
 
 .skills-content .right .mysql::before{
     width: 10%;
+}
+
+#more {
+    display: none;
 }
 
 /*Designs section styling*/
@@ -600,6 +604,14 @@ section .title::after{
 .contact .right form .button input:hover{
     color: rgb(72, 191, 255);
     background: none;
+}
+.views p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.views a img{
+    padding-bottom: 20px;
 }
 
 /*footer section styling*/

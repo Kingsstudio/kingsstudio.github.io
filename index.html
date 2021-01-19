@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="style.css"> 
         <title>Kings studio</title>
     </head>
-    <body>
+    <body onload="incrementCount(10)">
         <div class="scroll-up-btn">
             <i class="fas fa-angle-up"></i>
         </div>
@@ -117,8 +117,11 @@
                         <div class="text">My creative skills & experiences</div>
                         <p>Skills helps to take resposibility for what you do
                             rather than blame others. Learn to improve your
-                             skill at anytime in your career</p>
-                        <a href="https://careerwise.minnstate.edu/careers/why-skills-important.html" target="_blank">Read more</a>
+                             skill at anytime in your career<div id="dots">...</div><div id="more">Many of the skills employers want are needed in all types of jobs. 
+                            Discover the types of employability and occupational skills employers are looking for.Then use the resources below to think 
+                            about the skills you have gained from other experiences and how you can build new skills. 
+                            Most of your skills can transfer to new opportunities.</div></p>
+                        <button onclick="myFunction()" id="myBtn">Read more</button>
                     </div>
                     <div class="column right">
                         <div class="bars">
@@ -226,7 +229,7 @@
             </div>
         </div>
     </section>
-        <!--Design Ends-->    
+        <!--Design Ends-->
 
         <!--Contacts begins-->
         <section class="contact" id="contact">
@@ -300,6 +303,20 @@
         </section>
         <!--Contact Ends-->
 
+         <!--Viewers begins-->
+         
+        <!--Viewers Ends-->
+        <div class="views">
+            <p>Page Views: </p>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7741747&style=0011&nbdigits=3&type=page&initCount=0" 
+            title="Free Counter" Alt="web counter"   border="0" /></a> 
+            
+            <p>Page Visitors: </p>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=7741746&style=0011&nbdigits=3&type=ip&initCount=0" 
+            title="Free Counter" Alt="web counter"   border="0" /></a>        
+         </div>
         <!--footer section begins-->
         <footer>
             <span>Created By <a href="https://mail.google.com/mail/mu/mp/371/#co" target="_blank">Kings Studio</a> | <span class="fas fa-copyright"></span> 2021 All rights reserved.</span>
@@ -310,7 +327,6 @@
             </div>
         </footer>
         <!--footer section ends-->
-
         <script src="script.js"></script>
     </body>
     </html>
