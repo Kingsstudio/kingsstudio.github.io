@@ -33,7 +33,7 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: #ffe896;
+    background: #3a3a3c;
 }
 
 .navbar .max-width {
@@ -443,31 +443,9 @@ section .title::after{
 
 /* Designs container */
 
-.image-grid {
-    --gap: 16px;
-    --num-cols: 4;
-    --row-height: 300px;
-
-    box-sizing: border-box;
-    padding: var(--gap);
-
-    display: grid;
-    grid-template-columns: repeat(var(--num-cols) 1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
-}
-
-.image-grid-col-2 {
-    grid-column: span 2;
-}
-
-.image-grid-row-2 {
-    grid-row: span 2;
-}
-
 .box-card {
-    width: 300px;
-    height: 300px;
+    height: 280px;
+    width: 280px;
     background: #333;
     border-radius: 30px;
     overflow: hidden;
