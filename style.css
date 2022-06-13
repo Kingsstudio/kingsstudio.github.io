@@ -232,7 +232,7 @@ section .title::after{
     height: 450px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 30px;
 }
 
 .about .about-content .right{
@@ -451,12 +451,13 @@ section .title::after{
     overflow: hidden;
     position: relative;
     display: flex;
-    align-items: left;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.25s ease;
     backface-visibility: hidden;
-    margin-top: 40px;
+    margin-top: 7vh;
+    object-fit: cover;
 }
 
 .box-card:hover {

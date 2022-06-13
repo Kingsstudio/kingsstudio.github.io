@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Photographer", "Graphics Designer", "Web Designer"],
+        strings: ["Photographer", "Graphic Designer", "Web Designer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
