@@ -456,8 +456,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.25s ease;
     backface-visibility: hidden;
-    margin-top: 7vh;
-    object-fit: cover;
+    margin-top: 40px;
 }
 
 .box-card:hover {
