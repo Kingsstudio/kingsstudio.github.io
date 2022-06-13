@@ -28,7 +28,7 @@ html {
 
 .navbar.sticky {
     padding: 15px 0;
-    background: rgb(72, 191, 255);
+    background: #ffe896;
 }
 
 .navbar .max-width {
@@ -40,11 +40,11 @@ html {
 .navbar .logo a {
     font-size: 35px;
     font-weight: 600;
-    color: orange;
+    color: #fff;
 }
 
 .navbar .logo a span {
-    color: rgb(72, 191, 255);
+    color: #ffe896;
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -65,7 +65,7 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: orange;
+    color: #ffe896;
 }
 /*Menu button styling*/
 .menu-btn {
@@ -80,13 +80,12 @@ html {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(72, 191, 255);
-    color: #fff;
+    background: #ffe896;
     right: 30px;
     bottom: 10px;
     text-align: center;
     line-height: 45px;
-    color: #fff;
+    color: #3a3a3c;
     z-index: 9999;
     font-size: 30px;
     border-radius: 6px;
@@ -105,7 +104,7 @@ html {
 /*Home Section Styling*/
 .home {
     display: flex;
-    background: url("images/banner.jpg") no-repeat center;
+    background: url("images/banner.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -136,24 +135,25 @@ html {
 }
 
 .text-3 span{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     font-weight: 550;
 }
 
 .home-content a{
     display: inline-block;
-    background: rgb(72, 191, 255);
-    color: #fff;
+    background: #ffe896;
+    color: #3a3a3c;
+    font-weight: bold;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(72, 191, 255);
+    border: 2px solid #ffe896;
     transition: all 0.3s ease;
 }
 
 .home-content a:hover{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     background: none;
 }
 
@@ -203,7 +203,7 @@ section .title::after{
     bottom: -12px;
     left: 50%;
     font-size: 16px;
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -236,7 +236,7 @@ section .title::after{
 }
 
 .about .about-content .right .text span {
-    color: rgb(72, 191, 255);
+    color: #ffe896;
 }
 
 .about .about-content .right p{
@@ -245,19 +245,19 @@ section .title::after{
 
 .about .about-content .right a{
     display: inline-block;
-    background: rgb(72, 191, 255);
-    color: #fff;
+    background: #ffe896;
+    color: #3a3a3c;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(72, 191, 255);
+    border: 2px solid #ffe896;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     background: none;
 }
 
@@ -277,7 +277,7 @@ section .title::after{
 }
 
 .card .box img:hover{
-    border-color: #fff;
+    border-color: #3a3a3c;
 }
 
 .services .title::before, 
@@ -303,7 +303,8 @@ section .title::after{
 }
 
 .services .service-content .card:hover {
-    background: rgb(72, 191, 255);
+    background: #ffe896;
+    color: #3a3a3c;
 }
 
 .services .service-content .card .box{
@@ -316,12 +317,12 @@ section .title::after{
 
 .services .service-content .card i{
     font-size: 50px;
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     transition: color 0.3s ease;
 }
 
 .services .service-content .card:hover i {
-    color: #fff;
+    color: #3a3a3c;
 }
 
 .services .service-content .card .text {
@@ -351,19 +352,19 @@ section .title::after{
 
 .skills .skills-content .left button{
     display: inline-block;
-    background: rgb(72, 191, 255);
-    color: #fff;
+    background: #ffe896;
+    color: #3a3a3c;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(72, 191, 255);
+    border: 2px solid #ffe896;
     transition: all 0.3s ease;
 }
 
 .skills .skills-content .left button:hover{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     background: none;
 }
 
@@ -396,7 +397,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(72, 191, 255);
+    background: #ffe896;
 }
 
 .skills-content .right .html::before{
@@ -429,54 +430,23 @@ section .title::after{
 }
 
 
-/* Slideshow container */
+/* Designs container */
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-.slideshow-container img{
-    position: relative;
-    height: 450px;
-    width: 500px;
-    left: 25%;
-    object-fit: cover;
+.column{
+    flex: 50%;
+    padding: 0 4px;
 }
 
-.slideshow-container .text {
-    color: #f2f2f2;
-    font-size: 30px;
-    padding: 8px 12px;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 30px 2px;
-    background-color: none;
-    border-radius: 50%;
-    border: 2px solid rgb(72, 191, 255);
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: rgb(72, 191, 255);
-  }
 
 /* Fading animation */
 .fade {
@@ -591,9 +561,9 @@ section .title::after{
 .contact .right form .button input{
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(72, 191, 255);
-    background: rgb(72, 191, 255);
-    color: #fff;
+    border: 2px solid #ffe896;
+    background: #ffe896;
+    color: #3a3a3c;
     font-size: 20px;
     font-weight: 500;
     border-radius: 6px;
@@ -602,16 +572,8 @@ section .title::after{
 }
 
 .contact .right form .button input:hover{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     background: none;
-}
-.views p{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-}
-.views a img{
-    padding-bottom: 20px;
 }
 
 /*footer section styling*/
@@ -622,7 +584,7 @@ footer{
 }
 
 footer span a{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
     text-decoration: none;
 }
 
