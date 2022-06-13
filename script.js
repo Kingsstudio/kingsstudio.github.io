@@ -25,7 +25,7 @@ $(document).ready(function(){
 });
     //self-typing animation script
     var typed = new Typed(".typing", {
-        strings: ["Photography", "Graphics Designing", "Web Designing"],
+        strings: ["Photography", "Graphics Design", "Web Design"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
