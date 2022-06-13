@@ -515,14 +515,6 @@ section .title::after{
 }
 
 
-
-@media screen and (max-width: 1024px) {
-    .image-grid {
-        --num-cols: 2;
-        --row-height: 200px;
-    }
-}
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
