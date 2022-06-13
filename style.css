@@ -439,7 +439,7 @@ section .title::after{
 
 /* Designs container */
 
-.image-grid {
+/*.image-grid {
     --gap: 16px;
     --num-cols: 4;
     --row-height: 300px;
@@ -465,7 +465,79 @@ section .title::after{
 
 .image-grid-row-2 {
     grid-row: span 2;
+}*/
+
+.card {
+    width: 400px;
+    height: 400px;
+    background: #333;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
 }
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card:hover:after {
+    height: 280px;
+}
+
+.card:hover .con-text p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+.card:hover img{
+    transform: scale(1.25);
+}
+
+.card:after {
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 20;
+    transition: all 0.25s ease;
+}
+
+.card img {
+    height: 100%;
+    z-index: 10;
+    transition: all 0.25s ease;
+}
+
+.card .con-text {
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.card .con-text p {
+    font-size: 0.8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
 
 @media screen and (max-width: 1024px) {
     .image-grid {
