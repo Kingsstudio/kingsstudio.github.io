@@ -10,6 +10,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.about, .skills{
+    color: #3a3a3c;
+    background: #fff;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -212,6 +217,7 @@ section .title::after{
 /*about section styling*/
 .about .title::after{
     content: "Who i am";
+    color: #3a3a3c;
 }
 
 .about .about-content .left{
@@ -236,7 +242,7 @@ section .title::after{
 }
 
 .about .about-content .right .text span {
-    color: #ffe896;
+    color: #3a3a3c;
 }
 
 .about .about-content .right p{
@@ -334,6 +340,7 @@ section .title::after{
 /* Skills section styling*/
 .skills .title::after {
     content: "What i know";
+    color: #3a3a3c;
 }
 
 .skills .skills-content .column {
@@ -432,20 +439,39 @@ section .title::after{
 
 /* Designs container */
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+.image-grid {
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols) 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
 }
 
-.column{
-    flex: 50%;
-    padding: 0 4px;
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
 }
 
 /* Fading animation */
@@ -469,6 +495,7 @@ section .title::after{
 /*Contact section styling */
 .contact .title::after{
     content: "get in touch";
+    color: #3a3a3c;
 }
 
 .contact .contact-content .column{
@@ -501,7 +528,7 @@ section .title::after{
 
 .contact .contact-content .row i{
     font-size: 25px;
-    color: rgb(72, 191, 255);
+    color: #ffe896;
 }
 
 .contact .contact-content .info .head{
@@ -602,7 +629,7 @@ footer span a:hover{
 }
 
 .footer-icons a:hover{
-    color: rgb(72, 191, 255);
+    color: #ffe896;
 }
 
 
