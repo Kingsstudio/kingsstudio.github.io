@@ -467,7 +467,7 @@ section .title::after{
     grid-row: span 2;
 }*/
 
-.img_card {
+.box_card {
     width: 400px;
     height: 400px;
     background: #333;
@@ -482,24 +482,24 @@ section .title::after{
     backface-visibility: hidden;
 }
 
-.img_card:hover {
+.box-card:hover {
     transform: scale(0.9);
 }
 
-.img_card:hover:after {
+.box-card:hover:after {
     height: 280px;
 }
 
-.img_card:hover .con-text p{
+.box-card:hover .context p{
     margin-bottom: 0px;
     opacity: 1;
 }
 
-.img_card:hover img{
+.box-card:hover img{
     transform: scale(1.25);
 }
 
-.img_card:after {
+.box-card:after {
     width: 100%;
     content: '';
     left: 0px;
@@ -511,13 +511,13 @@ section .title::after{
     transition: all 0.25s ease;
 }
 
-.img_card img {
+.box-card img {
     height: 100%;
     z-index: 10;
     transition: all 0.25s ease;
 }
 
-.img_card .con-text {
+.box-card .context {
     z-index: 30;
     position: absolute;
     bottom: 0px;
@@ -526,7 +526,7 @@ section .title::after{
     padding-bottom: 50px;
 }
 
-.img_card .con-text p {
+.box-card .context p {
     font-size: 0.8rem;
     opacity: 0;
     margin-bottom: -170px;
