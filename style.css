@@ -467,9 +467,9 @@ section .title::after{
     grid-row: span 2;
 }*/
 
-.box_card {
-    width: 400px;
-    height: 400px;
+.box-card {
+    width: 300px;
+    height: 300px;
     background: #333;
     border-radius: 30px;
     overflow: hidden;
@@ -480,6 +480,7 @@ section .title::after{
     cursor: pointer;
     transition: all 0.25s ease;
     backface-visibility: hidden;
+    margin: 10px;
 }
 
 .box-card:hover {
