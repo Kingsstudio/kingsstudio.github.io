@@ -467,7 +467,7 @@ section .title::after{
     grid-row: span 2;
 }*/
 
-.imgcard {
+.img_card {
     width: 400px;
     height: 400px;
     background: #333;
@@ -482,24 +482,24 @@ section .title::after{
     backface-visibility: hidden;
 }
 
-.imgcard:hover {
+.img_card:hover {
     transform: scale(0.9);
 }
 
-.imgcard:hover:after {
+.img_card:hover:after {
     height: 280px;
 }
 
-.imgcard:hover .con-text p{
+.img_card:hover .con-text p{
     margin-bottom: 0px;
     opacity: 1;
 }
 
-.imgcard:hover img{
+.img_card:hover img{
     transform: scale(1.25);
 }
 
-.imgcard:after {
+.img_card:after {
     width: 100%;
     content: '';
     left: 0px;
@@ -511,13 +511,13 @@ section .title::after{
     transition: all 0.25s ease;
 }
 
-.imgcard img {
+.img_card img {
     height: 100%;
     z-index: 10;
     transition: all 0.25s ease;
 }
 
-.imgcard .con-text {
+.img_card .con-text {
     z-index: 30;
     position: absolute;
     bottom: 0px;
@@ -526,7 +526,7 @@ section .title::after{
     padding-bottom: 50px;
 }
 
-.imgcard .con-text p {
+.img_card .con-text p {
     font-size: 0.8rem;
     opacity: 0;
     margin-bottom: -170px;
