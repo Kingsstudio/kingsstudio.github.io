@@ -1,3 +1,13 @@
+//Animate send button
+    document.querySelector('.btn').addEventListener('click', (evt) => {
+        evt.target.classList.add('loading')
+
+        setTimeout(() => {
+            ext.target.classList.remove('loading')
+        }, 3000);
+    })
+
+
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
