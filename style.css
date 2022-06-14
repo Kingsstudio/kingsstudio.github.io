@@ -444,19 +444,19 @@ section .title::after{
 /* Designs container */
 
 .box-card {
-    height: 280px;
-    width: 280px;
+    height: 90%;
+    width: 90%;
     background: #333;
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    display: flex;
+    display: grid;
     align-items: left;
     justify-content: center;
     cursor: pointer;
     transition: all 0.25s ease;
     backface-visibility: hidden;
-    margin-top: 40px;
+    margin: 40px;
 }
 
 .box-card:hover {
@@ -490,6 +490,7 @@ section .title::after{
 
 .box-card img {
     height: 100%;
+    width: 100%;
     z-index: 10;
     transition: all 0.25s ease;
 }
