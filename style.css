@@ -113,7 +113,7 @@ html {
 /*Home Section Styling*/
 .home {
     display: flex;
-    background: url("images/banner.png") no-repeat center;
+    background: url("images/banner.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -644,6 +644,13 @@ section .title::after{
 .button button:hover{
     color: #3a3a3c;
     background: none;
+}
+
+.loading-animate:after {
+    content: '';
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
 }
 
 /*footer section styling*/
